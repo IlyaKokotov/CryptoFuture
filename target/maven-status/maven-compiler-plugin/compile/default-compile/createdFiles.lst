@@ -1,0 +1,11 @@
+ru\CryptoFuture\Controller\UserController.class
+ru\CryptoFuture\model\User.class
+ru\CryptoFuture\service\SecurityService.class
+ru\CryptoFuture\service\UserDetailsServiceImpl.class
+ru\CryptoFuture\service\UserServiceImpl.class
+ru\CryptoFuture\service\UserService.class
+ru\CryptoFuture\dao\RoleDao.class
+ru\CryptoFuture\service\SecurityServiceImpl.class
+ru\CryptoFuture\model\Role.class
+ru\CryptoFuture\validator\UserValidator.class
+ru\CryptoFuture\dao\UserDao.class
