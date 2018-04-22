@@ -17,6 +17,7 @@
     </bean>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+
         <property name="prefix">
             <value>/WEB-INF/views/</value>
         </property>
@@ -24,5 +25,10 @@
             <value>.jsp</value>
         </property>
     </bean>
+
+    <mvc:view-controller path="/about.html" view-name="/about"/>
+    <mvc:view-controller path="/registration.html" view-name="/registration"/>
+    <mvc:view-controller path="/login.html" view-name="/login"/>
+    <mvc:view-controller path="/Contacts.html" view-name="/Contacts"/>
 
 </beans>

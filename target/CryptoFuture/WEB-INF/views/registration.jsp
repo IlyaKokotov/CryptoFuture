@@ -17,6 +17,7 @@
 
     <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
     <link href="${contextPath}/resources/css/common.css" rel="stylesheet">
+    <link href="${contextPath}/resources/css/cover.css" rel="stylesheet">
 
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -26,38 +27,63 @@
 
 <body>
 
-<div class="container">
+<div class="site-wrapper">
 
-    <form:form method="POST" modelAttribute="userForm" class="form-signin">
-        <h2 class="form-signin-heading">Create your account</h2>
-        <spring:bind path="username">
-            <div class="form-group ${status.error ? 'has-error' : ''}">
-                <form:input type="text" path="username" class="form-control" placeholder="Username"
-                            autofocus="true"></form:input>
-                <form:errors path="username"></form:errors>
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">CryptoAnalytics</h3>
+                    <ul class="nav masthead-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </spring:bind>
 
-        <spring:bind path="password">
-            <div class="form-group ${status.error ? 'has-error' : ''}">
-                <form:input type="password" path="password" class="form-control" placeholder="Password"></form:input>
-                <form:errors path="password"></form:errors>
+            <form:form method="POST" modelAttribute="userForm" class="form-signin">
+                <h2 class="form-signin-heading">Create your account</h2>
+                <spring:bind path="username">
+                    <div class="form-group ${status.error ? 'has-error' : ''}">
+                        <form:input type="text" path="username" class="form-control" placeholder="Username"
+                                    autofocus="true"></form:input>
+                        <form:errors path="username"></form:errors>
+                    </div>
+                </spring:bind>
+
+                <spring:bind path="password">
+                    <div class="form-group ${status.error ? 'has-error' : ''}">
+                        <form:input type="password" path="password" class="form-control" placeholder="Password"></form:input>
+                        <form:errors path="password"></form:errors>
+                    </div>
+                </spring:bind>
+
+                <spring:bind path="confirmPassword">
+                    <div class="form-group ${status.error ? 'has-error' : ''}">
+                        <form:input type="password" path="confirmPassword" class="form-control"
+                                    placeholder="Confirm your password"></form:input>
+                        <form:errors path="confirmPassword"></form:errors>
+                    </div>
+                </spring:bind>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+            </form:form>
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>2018. All rights reserved, analytics by <a href="https://www.binance.com">Binance</a>.</p>
+                </div>
             </div>
-        </spring:bind>
 
-        <spring:bind path="confirmPassword">
-            <div class="form-group ${status.error ? 'has-error' : ''}">
-                <form:input type="password" path="confirmPassword" class="form-control"
-                            placeholder="Confirm your password"></form:input>
-                <form:errors path="confirmPassword"></form:errors>
-            </div>
-        </spring:bind>
+        </div>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
-    </form:form>
+    </div>
 
 </div>
-<!-- /container -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
 </body>
