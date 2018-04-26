@@ -16,7 +16,11 @@
     <title>CryptoFuture</title>
 
     <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
-    <link href="${contextPath}/resources/css/main.css" rel="stylesheet">
+    <link href="${contextPath}/resources/js/gcharts.js" rel="stylesheet">
+    <link href="${contextPath}/resources/js/main.js" rel="stylesheet">
+
+
+
 </head>
 <body>
 
@@ -32,10 +36,14 @@
 
     </c:if>
 
+</div>
+<div class="center-block"></div>
 
 </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
+<script src="${contextPath}/resources/js/angular.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="resources/js/main.js"></script>
 </body>

@@ -14,5 +14,8 @@
     <context:component-scan base-package="ru.CryptoFuture.*"/>
 
     <context:property-placeholder location="classpath:database.properties"/>
+    <context:property-placeholder location="classpath:application.properties"/>
+    <!-- REST template configuration -->
+    <bean id="restTemplate" class="org.springframework.web.client.RestTemplate"/>
 
 </beans>
