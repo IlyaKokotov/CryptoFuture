@@ -15,3 +15,4 @@ public class GetIndexPageServlet extends HttpServlet {
         req.getRequestDispatcher("/WEB-INF/view/index.jsp").forward(req, resp);
     }
 }
+*/
