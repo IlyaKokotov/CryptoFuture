@@ -1,4 +1,4 @@
-package ru.CryptoFuture.MockitoTestServlet;
+/*package ru.CryptoFuture.MockitoTestServlet;
 
 
 import javax.servlet.ServletException;
