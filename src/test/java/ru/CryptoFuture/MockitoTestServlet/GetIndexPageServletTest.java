@@ -1,4 +1,4 @@
-package ru.CryptoFuture.GetIndexPageServlet;
+package ru.CryptoFuture.MockitoTestServlet;
 
 import junit.framework.TestCase;
 import org.junit.Test;
