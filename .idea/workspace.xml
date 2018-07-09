@@ -7,14 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebe32b70-c18f-4847-bf6c-46d465a404a7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/Controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/Controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/restController/RestController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/restController/RestController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/restController/RestTemplateController.java" afterPath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/restController/RestTemplateController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/restService/DBLogServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/restService/DBLogServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/service/SecurityServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/service/SecurityServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/service/UserDetailsServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/service/UserDetailsServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/service/UserServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/validator/UserValidator.java" afterPath="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/validator/UserValidator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,7 +31,18 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="UserValidator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/CryptoFuture/validator/UserValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -111,11 +114,11 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/restController/RestTemplateController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/restController/RestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/Controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/validator/UserValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/service/UserDetailsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/restService/DBLogServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/service/SecurityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/CryptoFuture/validator/UserValidator.java" />
       </list>
     </option>
   </component>
@@ -176,7 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,17 +229,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ru" type="462c0819:PsiDirectoryNode" />
               <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-              <item name="restService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CryptoFuture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ru" type="462c0819:PsiDirectoryNode" />
-              <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="validator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CryptoFuture" type="b2602c69:ProjectViewProjectNode" />
@@ -265,9 +257,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -583,6 +576,7 @@
       <workItem from="1530251868348" duration="12192000" />
       <workItem from="1530877240636" duration="1790000" />
       <workItem from="1531154728208" duration="1535000" />
+      <workItem from="1531157023446" duration="71000" />
     </task>
     <servers />
   </component>
@@ -613,10 +607,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80103000" />
+    <option name="totallyTimeSpent" value="80174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -638,7 +633,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38980263" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18381241" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18683812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -908,7 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="36" lean-forward="false" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,7 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,7 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,12 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-          <folding>
-            <element signature="e#1186#1194#0" expanded="true" />
-            <element signature="e#2091#2099#0" expanded="true" />
-            <element signature="e#3014#3022#0" expanded="true" />
-            <element signature="e#3870#3878#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -977,7 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,7 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,7 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,20 +999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-          <folding>
-            <element signature="e#2584#2585#0" expanded="true" />
-            <element signature="e#2616#2617#0" expanded="true" />
-            <element signature="e#2817#2818#0" expanded="true" />
-            <element signature="e#2847#2848#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/CryptoFuture/validator/UserValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,6 +1036,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/CryptoFuture/validator/UserValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding />
         </state>
       </provider>
