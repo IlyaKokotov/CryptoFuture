@@ -21,6 +21,11 @@ public class UserValidator implements Validator {
         return User.class.equals(aClass);
     }
 
+    /**
+     * Здесь данные с формы проверяются на корректность
+     * @param o
+     * @param errors
+     */
     @Override
     public void validate(Object o, Errors errors) {
 

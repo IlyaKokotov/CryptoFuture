@@ -19,6 +19,10 @@ public class RestTemplateController {
 
     private final String EXTERNAL_REST_URL = "http://jsonplaceholder.typicode.com";
 
+    /**
+     * Получает всех пользователей
+     * @return
+     */
     @RequestMapping(value = "/rest/users", method = RequestMethod.GET)
     public List<RestUserModel> getRestUsers() {
         System.out.println("RestTemplateController getRestUsers is called");
@@ -29,7 +33,7 @@ public class RestTemplateController {
         HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
         //JSON http://jsonplaceholder.typicode.com/users
         ResponseEntity<RestUserModel[]> response = restTemplate.exchange(
-                EXTERNAL_REST_URL +"/users",
+                EXTERNAL_REST_URL + "/users",
                 HttpMethod.GET,
                 entity,
                 RestUserModel[].class
@@ -37,6 +41,9 @@ public class RestTemplateController {
         return Arrays.asList(response.getBody());
     }
 
+    /**
+     * @return Получает все посты
+     */
     @RequestMapping(value = "/rest/posts", method = RequestMethod.GET)
     public List<RestPostsModel> getRestPosts() {
         System.out.println("RestTemplateController getRestPosts is called");
@@ -47,7 +54,7 @@ public class RestTemplateController {
         HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
 
         ResponseEntity<RestPostsModel[]> response = restTemplate.exchange(
-                EXTERNAL_REST_URL +"/posts",
+                EXTERNAL_REST_URL + "/posts",
                 HttpMethod.GET,
                 entity,
                 RestPostsModel[].class
@@ -55,6 +62,10 @@ public class RestTemplateController {
         return Arrays.asList(response.getBody());
     }
 
+    /**
+     * @param param
+     * @return Получить тело поста по id
+     */
     @RequestMapping(value = "/rest/posts/{param}", method = RequestMethod.GET)
     public RestPostsModel getRestPostsById(@PathVariable("param") String param) {
         System.out.println("RestTemplateController getRestPostsById is called");
@@ -65,7 +76,7 @@ public class RestTemplateController {
         HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
 
         ResponseEntity<RestPostsModel> response = restTemplate.exchange(
-                EXTERNAL_REST_URL +"/posts/" + param,
+                EXTERNAL_REST_URL + "/posts/" + param,
                 HttpMethod.GET,
                 entity,
                 RestPostsModel.class
@@ -73,10 +84,12 @@ public class RestTemplateController {
         return response.getBody();
     }
 
-
+    /**
+     * @param postId Удаляет пост по id
+     */
     @RequestMapping(value = "/rest/delPosts/{postId}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
-    public void deletePostByID(@PathVariable(value="postId") String postId) {
+    public void deletePostByID(@PathVariable(value = "postId") String postId) {
 
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
@@ -84,12 +97,15 @@ public class RestTemplateController {
         HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
 
 
-        restTemplate.exchange(EXTERNAL_REST_URL +"/posts/" + postId, HttpMethod.DELETE, entity, String.class);
+        restTemplate.exchange(EXTERNAL_REST_URL + "/posts/" + postId, HttpMethod.DELETE, entity, String.class);
         System.out.println("@RestTemplateControllerExample deletePostByID is called");
     }
 
+    /**
+     * @param ex Обрабатывает исключения, возникшие в @RestTemplateController
+     */
     @ExceptionHandler
-    @ResponseStatus(value = HttpStatus.FORBIDDEN,reason="FORBIDDEN ACCESS (PROVIDE YOUR CUSTOM REASON HERE)")
+    @ResponseStatus(value = HttpStatus.FORBIDDEN, reason = "FORBIDDEN ACCESS (PROVIDE YOUR CUSTOM REASON HERE)")
     public void handleException(Exception ex) {
         System.out.println("@RestTemplateControllerExample handleException");
         System.out.println(ex);

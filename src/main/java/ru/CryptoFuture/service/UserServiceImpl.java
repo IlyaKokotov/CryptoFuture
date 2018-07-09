@@ -25,6 +25,10 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
+    /**
+     * Сохранить пользователя
+     * @param user
+     */
     @Override
     public void save(User user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
@@ -34,6 +38,11 @@ public class UserServiceImpl implements UserService {
         userDao.save(user);
     }
 
+    /**
+     * Найти пользователя по нику
+     * @param username
+     * @return
+     */
     @Override
     public User findByUsername(String username) {
         return userDao.findByUsername(username);

@@ -22,11 +22,15 @@ public class SecurityServiceImpl implements SecurityService {
     @Autowired
     private UserDetailsService userDetailsService;
 
+    /**
+     * Найти пользователя
+     * @return
+     */
     @Override
     public String findLoggedInUsername() {
 
         Object userDetails = SecurityContextHolder.getContext().getAuthentication().getDetails();
-        if(userDetails instanceof UserDetails) {
+        if (userDetails instanceof UserDetails) {
 
             return ((UserDetails) userDetails).getUsername();
 
@@ -36,6 +40,11 @@ public class SecurityServiceImpl implements SecurityService {
 
     }
 
+    /**
+     * Автологин
+     * @param username
+     * @param password
+     */
     @Override
     public void autoLogin(String username, String password) {
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);
@@ -44,7 +53,7 @@ public class SecurityServiceImpl implements SecurityService {
 
         authenticationManager.authenticate(authenticationToken);
 
-        if(authenticationToken.isAuthenticated()) {
+        if (authenticationToken.isAuthenticated()) {
 
             SecurityContextHolder.getContext().setAuthentication(authenticationToken);
 

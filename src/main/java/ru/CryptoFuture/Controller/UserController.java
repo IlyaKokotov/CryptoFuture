@@ -26,6 +26,11 @@ public class UserController  {
     @Autowired
     private UserValidator userValidator;
 
+    /**
+     * Возвращает страницу с регистрацией
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "/registration", method = RequestMethod.GET)
     public String registration(Model model) {
 
@@ -34,6 +39,14 @@ public class UserController  {
 
     }
 
+    /**
+     * При успешном вводе данных возвращает главную страницу,
+     * если данные не проходят валидацию, врзвращает страницу с регистрацией
+     * @param userForm
+     * @param bindingResult
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "/registration", method = RequestMethod.POST)
     public String registration(@ModelAttribute("userForm") User userForm, BindingResult bindingResult, Model model) {
         userValidator.validate(userForm, bindingResult);
@@ -48,6 +61,13 @@ public class UserController  {
 
     }
 
+    /**
+     * Возвращает страницу логина
+     * @param model
+     * @param error
+     * @param logout
+     * @return
+     */
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login(Model model, String error, String logout) {
         if(error != null) {
@@ -63,11 +83,21 @@ public class UserController  {
 
     }
 
+    /**
+     * Возвращает главную
+     * @param model
+     * @return
+     */
     @RequestMapping(value = {"/", "/welcome"}, method = RequestMethod.GET)
     public String welcome (Model model) {
         return "welcome";
     }
 
+    /**
+     * Страница, которую видит только админ
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "/admin", method = RequestMethod.GET)
     public String admin(Model model) {
         return "admin";

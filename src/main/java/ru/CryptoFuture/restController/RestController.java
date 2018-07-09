@@ -15,8 +15,13 @@ import java.util.List;
 public class RestController {
 
     @Autowired
-    private  DBLogService dbLogService;
+    private DBLogService dbLogService;
 
+    /**
+     * Получить логи
+     *
+     * @return
+     */
     @RequestMapping(value = "/rest/getAllDBLogsJSON", method = RequestMethod.GET, produces = "application/json")
     public @ResponseBody
     DBLogsJSON getAllDBLogsJSON() {
