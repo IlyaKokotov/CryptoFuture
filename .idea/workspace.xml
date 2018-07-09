@@ -6,13 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebe32b70-c18f-4847-bf6c-46d465a404a7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/angular.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/gcharts.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/vue.js" afterPath="" />
-    </list>
+    <list default="true" id="ebe32b70-c18f-4847-bf6c-46d465a404a7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -193,69 +187,11 @@
             <path>
               <item name="CryptoFuture" type="b2602c69:ProjectViewProjectNode" />
               <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CryptoFuture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CryptoFuture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CryptoFuture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ru" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CryptoFuture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ru" type="462c0819:PsiDirectoryNode" />
-              <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CryptoFuture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ru" type="462c0819:PsiDirectoryNode" />
-              <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-              <item name="validator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CryptoFuture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CryptoFuture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CryptoFuture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CryptoFuture" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -580,7 +516,7 @@
       <workItem from="1530251868348" duration="12192000" />
       <workItem from="1530877240636" duration="1790000" />
       <workItem from="1531154728208" duration="1535000" />
-      <workItem from="1531157023446" duration="261000" />
+      <workItem from="1531157023446" duration="586000" />
     </task>
     <servers />
   </component>
@@ -611,7 +547,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80364000" />
+    <option name="totallyTimeSpent" value="80689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
